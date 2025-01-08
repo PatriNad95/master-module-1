@@ -1,0 +1,31 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  font-family: Arial;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+}
+
+h2 {
+  margin: 0px;
+}
+
+nav {
+  display: flex;
+  background-color: #046b7b;
+  color: white;
+}
+
+.menu {
+  flex: 1;
+  padding: 10px;
+}
+
+.menu:hover {
+  background-color: #2c4c5b;
+  cursor: pointer;
+}
