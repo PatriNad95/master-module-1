@@ -1,0 +1,32 @@
+@use "base" as *;
+
+.containers {
+  display: flex;
+  height: 100px;
+}
+
+.box {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.color-box-text {
+  color: white;
+}
+
+.container-1 {
+  @extend .containers;
+  @include generate-color-palette(red);
+}
+
+.container-2 {
+  @extend .containers;
+  @include generate-color-palette(blue);
+}
+
+.container-3 {
+  @extend .containers;
+  @include generate-color-palette(#4caf50);
+}
