@@ -1,3 +1,8 @@
+$base-color-text: white;
+$base-color-first: red;
+$base-color-second: blue;
+$base-color-thrid: #4caf50;
+
 @mixin generate-color-palette($base-color) {
   .darken-4 {
     background-color: darken($base-color, 40%);

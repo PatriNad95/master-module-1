@@ -13,20 +13,20 @@
 }
 
 .color-box-text {
-  color: white;
+  color: $base-color-text;
 }
 
 .container-1 {
   @extend .containers;
-  @include generate-color-palette(red);
+  @include generate-color-palette($base-color-first);
 }
 
 .container-2 {
   @extend .containers;
-  @include generate-color-palette(blue);
+  @include generate-color-palette($base-color-second);
 }
 
 .container-3 {
   @extend .containers;
-  @include generate-color-palette(#4caf50);
+  @include generate-color-palette($base-color-thrid);
 }
