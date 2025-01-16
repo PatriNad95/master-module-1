@@ -1,0 +1,41 @@
+@use "tema-b" as *;
+
+body {
+  font-family: $font-principal;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.main div {
+  width: 100px;
+  height: 50px;
+  border: 1px solid grey;
+}
+
+.secondary-font {
+  font-family: $font-secondary;
+}
+
+.box {
+  border-radius: $border-radius;
+  box-shadow: $box-shadow;
+  padding: 16px;
+}
+
+.base {
+  background-color: $base-color;
+  padding: 10px;
+}
+
+.important {
+  background-color: darken($color: $base-color, $amount: 20%);
+  padding: 10px;
+}
+
+.warning {
+  background-color: lighten($color: $base-color, $amount: 40%);
+  padding: 10px;
+}
